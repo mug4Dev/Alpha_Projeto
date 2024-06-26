@@ -8,12 +8,12 @@ document.getElementById('togglePassword').addEventListener('click', function() {
     // Se a senha estiver oculta, mude para texto Troque o ícone para o olho aberto
     senhaEscudo.type = 'text';
     
-    eyeIcon.src = 'eye_close.png';
+    eyeIcon.src = 'Imgs/eye_close.png';
     eyeIcon.alt = 'mostrar';
     } else {
         // Se a senha esttiver visivel(text) mude para password E junto mude a img para eye_open
         senhaEscudo.type = 'password';
-        eyeIcon.src = 'eye_open.png';
+        eyeIcon.src = '/Imgs/eye_open.png';
         eyeIcon.alt = 'ocultar';
     }
 });
