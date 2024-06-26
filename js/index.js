@@ -1,3 +1,4 @@
+// Função de deixar a senha visivel!
 document.getElementById('togglePassword').addEventListener('click', function() {
     var senhaEscudo = document.getElementById('password');
     var eyeIcon = this.querySelector('img');
@@ -14,6 +15,20 @@ document.getElementById('togglePassword').addEventListener('click', function() {
         senhaEscudo.type = 'password';
         eyeIcon.src = 'eye_open.png';
         eyeIcon.alt = 'ocultar';
+    }
+});
+
+// Acesar a Pagina principal com verificação dos compos
+
+document.getElementById('enviar').addEventListener('click', function() {
+    let email = document.getElementById('username').value;
+    let password = document.getElementById('password').value;
+
+    if(email ===''|| password === '' ){
+        alert("Por favor preeencha os campos.");
+    }else{
+        alert('Login bem-sucedido!');
+        window.location.href = '/mainPage.html';
     }
 });
 
