@@ -10,8 +10,12 @@ body {
     height: 100px;
     margin-top: px;
     
+    
 }
 
+.loginTabela{
+    
+}
 
 .caixa{
     margin: 0 auto;
@@ -32,15 +36,18 @@ body {
             font-family: "Fira Sans", sans-serif;
             width: 300px;
             border-radius: 10px;
-            padding: 30px;
-        
+            padding: 25px;
+            width: 500px;
         }
         /* "#esqueceu"  o # é usado para mudar no CSS um id que esta delcaro no HTML */
         #esqueceu {
             text-align: center; 
             font-style: italic; 
+            height: 0px;
         }
-        
+        #enviar{
+            height: 100px;
+        }
         #esqueceu a {
             text-decoration: none; 
             color: blue; 
