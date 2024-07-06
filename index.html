@@ -7,62 +7,72 @@
     <link rel="stylesheet" href="styleLogin.css" />
   </head>
   <body>
-    <div class="caixa">
-      <h1>Murizon</h1>
+    <div class="conteiner">
+      <div>
+        <h1 class="titulo">Murizon</h1>
+      </div>
+      <div class="tabela">
+        <table class="loginTabela">
+          <tr>
+            <td colspan="2" style="text-align: center">
+              <h2>Deseja fazer login?</h2>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="username">Usuário:</label></td>
+            <td>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="E-mail pessoal"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="password">Senha:</label></td>
+            <td>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Digite uma senha forte"
+                required
+              />
+            </td>
+            <td>
+              <button type="button" id="togglePassword">
+                <img src="/Imgs/eye_open.png" alt="imagem" class="olhoImg" />
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td id="acesso">
+              Qual é seu acesso?
+              <select name="Tipoacesso" id="Tipoacesso">
+                <option value="cliente">Cliente</option>
+                <option value="administrador">Administrador/Sup</option>
+                <option value="vendedor">Vendedor</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td id="enviar" colspan="2" style="text-align: center">
+              <input type="submit" value="Entrar" />
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2" id="esqueceu">
+              Esqueceu a senha?<a href="SenhaNova.html"> Clique aqui!</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <i class="si-eye" style="font-size: 32px"></i>
     </div>
-
-    <table class="loginTabela">
-      <tr>
-        <td colspan="2" style="text-align: center">
-          <h2>Deseja fazer login?</h2>
-        </td>
-      </tr>
-      <tr>
-        <td><label for="username">Usuário:</label></td>
-        <td>
-          <input
-            type="text"
-            id="username"
-            name="username"
-            placeholder="E-mail pessoal"
-            required
-          />
-        </td>
-      </tr>
-      <tr>
-        <td><label for="password">Senha:</label></td>
-        <td>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Digite uma senha forte"
-            required
-          />
-        </td>
-        <td>
-          <button type="button" id="togglePassword">
-            <img src="/Imgs/eye_open.png" alt="imagem" class="olhoImg" />
-          </button>
-        </td>
-      </tr>
-      <tr>
-        <td></td>
-      </tr>
-      <tr>
-        <td id="enviar" colspan="2" style="text-align: center">
-          <input type="submit" value="Entrar" />
-        </td>
-      </tr>
-
-      <tr>
-        <td colspan="2" id="esqueceu">
-          Esqueceu a senha?<a href="SenhaNova.html"> Clique aqui!</a>
-        </td>
-      </tr>
-    </table>
-
-    <i class="si-eye" style="font-size: 32px"></i>
     <script src="js/index.js"></script>
   </body>
 </html>

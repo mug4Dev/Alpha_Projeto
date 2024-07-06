@@ -1,105 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
 body {
-    background-color: #fff8dc;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    margin-top: px;
-    
-    
+  background-color: #fff8dc;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: px;
+  display: flex;
 }
 
-.loginTabela{
-    
+select {
+  padding: 5px;
+  font-size: 16px;
+  border: 0px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff8dc;
 }
 
-.caixa{
-    margin: 0 auto;
-    background-color:#ece5c9;
-    margin:0 auto;
-    font-family: ""Fira Sans", sans-serif";
-    padding: 25px;
-    border-radius:25px;
-    width: 200px;
-    margin-top: 50px;
+.tabela {
+  transform: translateY(-20%);
+  margin: auto;
+
 }
 
-        table{
-            background-color:#ece5c9;
-            text-align: center;
-            margin: auto;
-            margin-top: 110px;
-            font-family: "Fira Sans", sans-serif;
-            width: 300px;
-            border-radius: 10px;
-            padding: 25px;
-            width: 500px;
-        }
-        /* "#esqueceu"  o # é usado para mudar no CSS um id que esta delcaro no HTML */
-        #esqueceu {
-            text-align: center; 
-            font-style: italic; 
-            height: 0px;
-        }
-        #enviar{
-            height: 100px;
-        }
-        #esqueceu a {
-            text-decoration: none; 
-            color: blue; 
-            cursor: pointer;
-        }
-       /*  Mudar o estilo da caixa de texto/ botão */ 
-        input[type="text"] {
-            background-color: #ece5c9; /* Define a cor de fundo */
-            color: rgb(80, 80, 80);; /* Define a cor do texto */
-            border: 0px ridge  gray; /* Adiciona uma borda para destacar a caixa de texto */
-            padding: 8px; /* Adiciona um preenchimento interno para melhorar a aparência */
-            font-family: "Fira Sans", sans-serif; /* Define a fonte do texto */
-            margin-left: 50px;
-        }
+.titulo {
+  background-color: #ece5c9;
+  font-family: "" Fira Sans ", sans-serif";
+  padding: 25px;
+  border-radius: 25px;
+  width: 200px;
+  margin: auto;
+  transform: translateY(55%);
+  
+}
+.conteiner {
+  width: 600px;
+  height: 600px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 50px;
+}
 
-        input[type="password"]{
-            background-color: #ece5c9; 
-            color:  rgb(80, 80, 80); 
-            padding: 8px; 
-            font-family: "Fira Sans", sans-serif; 
-            border: 0px ridge ;
-        }
-        input[type="submit"]{
-            background-color: #c9d4ec; 
-            color: rgb(80, 80, 80); 
-            padding: 8px; 
-            font-family: "Fira Sans", sans-serif; 
-            border: px;
-            border-radius: 8px;
-            cursor: pointer;
-            border: none;
-            outline: none;
-        }
-        
-        .passaword-conteiner{
-            position: relative;
-        }
-        /*Botao de ocular/mostrar senha*/
-        #togglePassword{
-            background-color: #c9d4ec00; 
-            color: rgb(80, 80, 80); 
-            padding: 4px; 
-            font-family: "Fira Sans", sans-serif; 
-            border-radius: 3px;
-            cursor: pointer;
-            border: none;
-            outline: none;
-            margin-right: px;
-        }
+table {
+  background-color: #ece5c9;
+  text-align: center;
+  margin: auto;
+  margin-top: 200px;
+  font-family: "Fira Sans", sans-serif;
+  width: 300px;
+  border-radius: 10px;
+  padding: 25px;
+  width: 500px;
+  
+}
+/* "#esqueceu"  o # é usado para mudar no CSS um id que esta delcaro no HTML */
+#esqueceu {
+  text-align: center;
+  font-style: italic;
+  height: 0px;
+}
+#enviar {
+  height: 100px;
+}
+#acesso {
+  border-left: auto;
+  border-right: auto;
+  transform: translateX(60%);
+  
+}
+#esqueceu a {
+  text-decoration: none;
+  color: blue;
+  cursor: pointer;
+}
+/*  Mudar o estilo da caixa de texto/ botão */
+input[type="text"] {
+  background-color: #ece5c9; /* Define a cor de fundo */
+  color: rgb(80, 80, 80); /* Define a cor do texto */
+  border: 0px ridge gray; /* Adiciona uma borda para destacar a caixa de texto */
+  padding: 8px; /* Adiciona um preenchimento interno para melhorar a aparência */
+  font-family: "Fira Sans", sans-serif; /* Define a fonte do texto */
+  margin-left: 50px;
+}
 
-        .olhoImg{
-            width: 25px;
-            height: auto;
-        }
-       
+input[type="password"] {
+  background-color: #ece5c9;
+  color: rgb(80, 80, 80);
+  padding: 8px;
+  font-family: "Fira Sans", sans-serif;
+  border: 0px ridge;
+}
+input[type="submit"] {
+  background-color: #c9d4ec;
+  color: rgb(80, 80, 80);
+  padding: 8px;
+  font-family: "Fira Sans", sans-serif;
+  border: px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.passaword-conteiner {
+  position: relative;
+}
+/*Botao de ocular/mostrar senha*/
+#togglePassword {
+  background-color: #c9d4ec00;
+  color: rgb(80, 80, 80);
+  padding: 4px;
+  font-family: "Fira Sans", sans-serif;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin-right: px;
+}
+
+.olhoImg {
+  width: 25px;
+  height: auto;
+}
