@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin-top: px;
+
   display: flex;
 }
 
@@ -59,6 +59,7 @@ table {
   border-radius: 10px;
   padding: 25px;
   width: 500px;
+  display: flex;
   
 }
 /* "#esqueceu"  o # é usado para mudar no CSS um id que esta delcaro no HTML */
@@ -74,7 +75,15 @@ table {
   border-left: auto;
   border-right: auto;
   transform: translateX(60%);
-  
+
+}
+
+#Tipoacesso{
+    cursor: pointer;
+}
+
+#escolha{
+    transform: translateY(20%);
 }
 #esqueceu a {
   text-decoration: none;
