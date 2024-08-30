@@ -1,0 +1,42 @@
+# Configuração geral do projeto
+name: Aplha
+description: Uma breve descrição do projeto
+version: 1.0.0
+
+# Configurações de entrada e saída
+input_dir: src
+output_dir: dist
+
+# Configurações de desenvolvimento
+development:
+  debug: true
+  log_level: verbose
+
+# Configurações de produção
+production:
+  debug: false
+  log_level: error
+
+# Configurações de API
+api:
+  endpoint: https://api.exemplo.com
+  timeout: 5000
+  retries: 3
+
+# Configurações de banco de dados
+database:
+  host: localhost
+  port: 5432
+  username: usuario
+  password: senha
+  database_name: nome_do_banco
+
+# Outras configurações
+features:
+  enable_feature_x: true
+  enable_feature_y: false
+
+# Configurações personalizadas
+custom:
+  setting1: valor1
+  setting2: valor2
