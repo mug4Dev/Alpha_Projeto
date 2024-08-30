@@ -1,6 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Outfit", sans-serif;
 }
 
+body{
+  height: 300vh;
+  background-color: #fff8dc;
+}
+
+nav.menu-lateral{
+  width: 80px;
+  height: 100%;
+  background-color:#ece5c9;
+  padding:  40px 0 40px 1%;
+  box-shadow: 3px 0 0 #7c7762;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+nav.menu-lateral:hover {
+  width: 250px;
+}
+
+nav.menu-lateral{
+  transition: .8s;
+}
+
+ul{
+  height: 100%;
+  list-style-type: none;
+}
+
+ul li.item-menu:hover{
+  background-color: rgb(195, 193, 154);
+  border-radius: 10px;
+  margin-left: 15px;
+}
+
+ul li.item-menu{
+  transition: .4s;
+  margin-right: 10px;
+}
+
+ul li.ativo{
+  background-color: rgb(195, 193, 154);
+  border-radius: 10px;
+  
+}
+
+ul li.item-menu a {
+  color: #7c7762;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px 4%;
+  display: flex;
+  margin-bottom: 20px;
+  line-height: 40px;
+}
+
+ul li.item-menu a .txt_link{
+  margin-left: 55px;
+  transition: .8s;
+  opacity: 0;
+}
+
+nav.menu-lateral:hover .txt_link{
+  margin-left: 30px;
+  opacity: 1;
+}
+
+ul li.item-menu a .icon > i {
+  font-size: 30px;
+  margin-left: 10px;
+}
