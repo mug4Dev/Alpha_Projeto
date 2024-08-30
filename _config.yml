@@ -2,6 +2,8 @@
 name: Aplha
 description: Uma breve descrição do projeto
 version: 1.0.0
+baseurl: ""
+
 
 # Configurações de entrada e saída
 input_dir: src
@@ -40,3 +42,4 @@ features:
 custom:
   setting1: valor1
   setting2: valor2
+
